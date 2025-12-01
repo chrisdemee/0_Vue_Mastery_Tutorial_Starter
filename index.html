@@ -12,19 +12,7 @@
     <div id="app">
       <h1>Product goes here</h1>
     </div>
-<ul>
-  <li v-for="detail in details"> {{detail}} </li>
-</ul>
-<div v-for="(variant, index) in variants" 
-:key="variant.id" 
-@mouseover="updateVariant(index)"
-class="color-circle"
-:style="{backgroundColor: variant.color}">
-</div>
-<button 
-class="button" :class="{disabledButton: !inStock}" :disabled="!inStock" v-on:click="addToCart"> 
-Add to Cart
-</button>
+
     <!-- Import Js -->
     <script src="./main.js"></script>
   </body>
